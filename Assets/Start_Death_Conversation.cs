@@ -25,7 +25,7 @@ public class Start_Death_Conversation : MonoBehaviour
         }
     }
 
-    void Resume()
+    public void Resume()
     {
         Start.SetActive(false);
         Time.timeScale = 1f;
