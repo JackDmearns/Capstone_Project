@@ -1,23 +1,22 @@
-using Unity.VisualScripting;
 using UnityEngine;
 
-public class Ending_1 : MonoBehaviour
+public class Ending_9 : MonoBehaviour
 {
     public static bool GameIsPaused = false;
 
-    public GameObject Ending1;
+    public GameObject Ending9;
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.Y))
         {
             if (GameIsPaused)
             {
                 Resume();
             }
 
-            else 
+            else
             {
                 Paused();
             }
@@ -26,14 +25,14 @@ public class Ending_1 : MonoBehaviour
 
     public void Resume()
     {
-        Ending1.SetActive(false);
+        Ending9.SetActive(false);
         Time.timeScale = 1f;
         GameIsPaused = false;
     }
 
     void Paused()
     {
-        Ending1.SetActive(true);
+        Ending9.SetActive(true);
         Time.timeScale = 0f;
         GameIsPaused = true;
     }
